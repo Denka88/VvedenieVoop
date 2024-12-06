@@ -1,9 +1,9 @@
 public class Product {
 
-    String name;
-    String description;
-    float price;
-    int quantity;
+    private String name;
+    private String description;
+    private float price;
+    private int quantity;
 
     public Product() {
     }
