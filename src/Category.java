@@ -7,13 +7,13 @@ public class Category {
     private String name;
     private String description;
     private List<Product> products;
-    private int count = products.size();
+    private int count;
     private Set<Product> uniqProducts = new HashSet<>(products);
 
     public Category() {
     }
 
-    public Category(String name, String description, List<Product> products, int count, int uniqProducts) {
+    public Category(String name, String description, List<Product> products) {
         this.name = name;
         this.description = description;
         this.products = products;
@@ -44,15 +44,15 @@ public class Category {
     }
 
     public int getCount() {
-        return count;
+        return products.size();
     }
 
     public void setCount(int count) {
         this.count = count;
     }
 
-    public Set<Product> getUniqProducts() {
-        return uniqProducts;
+    public int getUniqProducts() {
+        return uniqProducts.size();
     }
 
     public void setUniqProducts(Set<Product> uniqProducts) {

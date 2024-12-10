@@ -1,3 +1,9 @@
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Product {
 
     private String name;
